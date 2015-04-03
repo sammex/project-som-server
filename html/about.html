@@ -1,0 +1,11 @@
+<div class="container">
+    <center>
+        <h1>F<span class="text-muted">requently</span> A<span class="text-muted">sked</span> Q<span class="text-muted">uestions</span></h1>
+        <h1><small>Wie und warum das Programm funktioniert, die Motivation dahinter und über unsere Seminarfacharbeit</small></h1>
+    </center>
+    <h2>Wie funktioniert die Gruppierung von Daten bzw. die Einteilung von Büchern in Cluster?</h2>
+    <p>Für die Einteilung von Büchern in Cluster nutzen wir eine spezielle Technik, die <a href="http://de.wikipedia.org/wiki/Selbstorganisierende_Karte">selbstorganisierende Karte</a>. Diese ist ein Typ eines neuronalen Netzes. Kurz formuliert ist das Prinzip, die Zentren von Gruppen zu finden. Wenn also Bücher als Punkte im mehrdimensionalen Raum dargestellt werden, so arbeitet man mit Punkten (den zukünftigen Gruppenzentren), Prototypen genannt, in eben diesem Raum. Für jeden Buchpunkt wird nun der Prototyp bestimmt, der ihm am nächsten ist und anschließend dieser an den Buchpunkt angenähert. Im Endeffekt stellen die Prototypen dann eine Approximation der Gruppenzentren dar. Näheres dazu finden Sie in unserer <a href="links.html">Seminarfacharbeit</a>.</p>
+    <h2>Wie wird die Einteilung von Büchern in Cluster genutzt?</h2>
+    <p>Die Bücher können somit in Themengruppen eingeteilt werden, nur sind diese viel feiner abgestuft als nur z.B. die Einteilung in Krimi / Thriller / Romanze / etc. Man könnte meinen, dass, wenn die Bücher sowieso im mehrdimensionalen Raum dargestellt werden, es sinnvoller wäre, statt Gruppen einfach nächstgelegene Bücher zu finden, da diese am meisten zueinander passen müssten - jedoch wird durch diese Technik viel Rechenkraft vom Server verlangt, da dieser für jede Anfrage somit die gesamte Datenmenge durchgehen würde. Stattdessen können Empfehlungen durch zwei Zugriffe auf die Datenbank erreicht werden: Einer, um die Gruppe herauszufinden, zu der das gelesene Buch gehört; Und einer, um alle anderen Bücher zu finden, die ebenfalls zu dieser Gruppe gehören.</p>
+    <div class="alert alert-info"><strong>Demnächst</strong> werden weitere Fragen und Antworten hier hinzugefügt.</div>
+</div>

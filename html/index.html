@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Eine Seite, um herauszufinden, welche Bücher du demnächst lesen kannst.">
+    <meta name="author" content="Julius Quasebarth, Robin Hankel, Luisa Derer">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" type="text/css" href="mincss/site.css">
+    <title>Bücherkarten</title>
+</head>
+<body>
+    <div id="notify"></div>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Navigation ein-/ausschalten</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" onclick="load('home.html')">Bücherkarten</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" onclick="load('about.html')">FAQ</a></li>
+                    <li><a href="#" onclick="load('application.html')">Programm</a></li>
+                    <li><a href="#" onclick="load('links.html')">Verweise</a></li>
+                    <li><a href="#" onclick="load('contribute.html')">Beitragen</a></li>
+                </ul>
+                <div class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Ich las..." name="clustersearch">
+                        <button type="button" class="btn btn-default">Los!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="content"></div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">&copy; Julius Quasebarth, Luisa Derer und Robin Hankel.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="minjs/asymech.js"></script>
+</body>
+</html>
