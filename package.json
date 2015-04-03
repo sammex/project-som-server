@@ -1,0 +1,20 @@
+{
+  "name": "SOM-Server",
+  "version": "0.0.1",
+  "description": "Die Vertretung für das auf GitHub befindliche Projekt \"sammex/project-som\".",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julius Quasebarth",
+  "license": "GPL",
+  "devDependencies": {
+    "autoprefixer": "^5.1.0",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-minify-html": "^1.0.2",
+    "gulp-ruby-sass": "^1.0.1",
+    "gulp-uglify": "^1.1.0"
+  },
+  "private": true
+}

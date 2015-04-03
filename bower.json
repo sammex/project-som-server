@@ -1,0 +1,30 @@
+{
+  "name": "SOM-Server",
+  "version": "0.0.1",
+  "authors": [
+    "Julius Leon Quasebarth <feldrandstudios@gmail.com>"
+  ],
+  "description": "Eine Vertretung für das auf GitHub befindliche Projekt \"sammex/project-som\".",
+  "main": "index.html",
+  "keywords": [
+    "selbstorganisierend",
+    "karte",
+    "buch",
+    "empfehlung"
+  ],
+  "license": "GPL",
+  "homepage": "h2421368.stratoserver.net",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.4",
+    "jquery": "~2.1.3",
+    "octicons": "~2.2.2"
+  },
+  "directory": "components"
+}
