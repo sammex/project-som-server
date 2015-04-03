@@ -1,0 +1,25 @@
+$icon-font-path: "../components/bootstrap-sass/assets/fonts/bootstrap/";
+
+@import '../components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+.featurette-image {
+    font-size: 200px;
+}
+
+.featurette-container {
+    text-align: center;
+}
+
+footer, footer * {
+    width: 100%;
+    text-align: center;
+}
+
+#notify {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+    min-width: 200px;
+    max-width: 50%;
+}
