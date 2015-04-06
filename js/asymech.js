@@ -14,10 +14,8 @@ function load() {
             $("#content").html(content);
         },
         error: function(jqXHR, status, error) {
-            notify("warning", "Seite '" + request.toString() + "' konnte nicht korrekt geladen werden. Lade Homepage...");
-            if (request.toString() != "home.html") {
-                load('home.html');
-            }
+            notify("warning", "Seite '" + request.toString() + "' konnte nicht korrekt geladen werden.");
+            notify("warning", "Entweder existiert die Datei nicht auf dem Server nicht oder die Internetverbindung fehlt.");
         }
     });
 }
