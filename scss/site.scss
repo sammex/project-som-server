@@ -1,4 +1,9 @@
 $icon-font-path: "../components/bootstrap-sass/assets/fonts/bootstrap/";
+$greentheme: #588c7e;
+$yellowtheme: #f2e394;
+$orangetheme: #f2a372;
+$redtheme: #d96459;
+$darkredtheme: #8c4646;
 
 @import '../components/bootstrap-sass/assets/stylesheets/bootstrap';
 
@@ -10,9 +15,17 @@ $icon-font-path: "../components/bootstrap-sass/assets/fonts/bootstrap/";
     text-align: center;
 }
 
-footer, footer * {
-    width: 100%;
-    text-align: center;
+footer {
+    bottom: 0px;
+    
+    * {
+        width: 100%;
+        text-align: center;
+    }
+    
+    p {
+        margin: 15px auto;
+    }
 }
 
 #notify {
