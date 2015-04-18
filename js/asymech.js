@@ -23,11 +23,22 @@ function load() {
 function sendNewBook() {
     var dataToBeSent = {};
     dataToBeSent.name = $('#bname>input').val();
+    if (dataToBeSent.name == "") {
+        notify("warning", "Es fehlt der Name des Buches. Bitte eingeben!");
+        return;
+    }
     dataToBeSent.autor = $('#bautor>input').val();
+    if (dataToBeSent.autor == "") {
+        notify("warning", "Es fehlt der Autor des Buches. Bitte eingeben!");
+        return;
+    }
     for (var i = 1; i <= 13; i++) {
         dataToBeSent["c" + i] = $('#c' + i + '>input').val();
+        if (dataToBeSent["c" + i] == "") {
+            notify("warning", "Es fehlt ein Charakterisierungswert. Bitte eingeben!");
+            return;
+        }
     }
-    console.log(dataToBeSent);
     $.ajax({
         method: "POST",
         url: "cgi-bin/addBook",
@@ -45,6 +56,7 @@ function sendNewBook() {
             notify("danger", "Die Daten konnten aus (wahrscheinlich) verbindungstechnischen Gründen nicht hinzugefügt.");
         }
     });
+    return;
 }
 
 function notify(type, msg) {
