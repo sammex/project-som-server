@@ -72,5 +72,24 @@ function notify(type, msg) {
         .queue(function() {$(this).remove();});
 }
 
+function fillInListing() {
+    var c = $("#listingsearch").val();
+    $.ajax({
+        method: "POST",
+        url: "cgi-bin/Listing",
+        data: {name: c},
+        success: function(content, status, jqXHR) {
+            var intermediate = content.split("\n");
+            for (var i = 0; i < intermediate.length; i++) {
+                intermediate[i] = "<h3>" + intermediate[i] + "</h3>";
+            }
+            $("#listingcontainer").html(intermediate.join(''));
+        },
+        error: function(jqXHR, status, error) {
+            $("#listingcontainer").html('<h4 class="text-muted"><span class="octicon octicon-x"></span> Konnte keine Bücher finden (Serverprobleme)</h4>');
+        }
+    });
+}
+
 $(document).ready(load());
 $(window).on("hashchange", function(event) { load(); });
